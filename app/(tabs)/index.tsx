@@ -6,6 +6,7 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
+import { Pressable, Text } from 'react-native';
 
 export default function HomeScreen() {
   return (
@@ -16,7 +17,12 @@ export default function HomeScreen() {
           source={require('@/assets/images/partial-react-logo.png')}
           style={styles.reactLogo}
         />
+        
       }>
+        <Pressable onPress={() => alert("clicked")}>
+  <Text>Click me</Text>
+</Pressable>
+        
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
@@ -49,6 +55,7 @@ export default function HomeScreen() {
               icon="square.and.arrow.up"
               onPress={() => alert('Share pressed')}
             />
+            
             <Link.Menu title="More" icon="ellipsis">
               <Link.MenuAction
                 title="Delete"
