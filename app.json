@@ -8,11 +8,9 @@
     "scheme": "nikoapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-
     "ios": {
       "supportsTablet": true
     },
-
     "android": {
       "package": "com.nikodola.nikoapp",
       "adaptiveIcon": {
@@ -20,12 +18,10 @@
         "backgroundColor": "#E6F4FE"
       }
     },
-
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-
     "plugins": [
       "expo-router",
       [
@@ -38,16 +34,21 @@
         }
       ]
     ],
-
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
     },
-
     "extra": {
       "eas": {
         "projectId": "eb6782ea-62b6-4cb3-a3a5-1308615d2727"
       }
+    },
+    "owner": "nikodola",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/eb6782ea-62b6-4cb3-a3a5-1308615d2727"
     }
   }
 }
