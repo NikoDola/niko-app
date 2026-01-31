@@ -4,20 +4,22 @@ import { useRouter } from "expo-router";
 export default function Index() {
   const router = useRouter();
   return (
-    <View
+    <>
+      <Text style={{textAlign: "center", marginTop: 60, color:"black", fontSize: 30}}>Select a Game</Text>
+         <View
       style={{
         flexDirection: "row",
         justifyContent: "space-between",
         paddingHorizontal: 20,
-        marginTop: 30,
+        marginTop: 40,
       }}
     >
+    
       <Pressable
         onPress={() => router.push("/games/flip-coin")}
         style={{
           width: "47.5%",
           aspectRatio: 1,
-          backgroundColor: "red",
           borderRadius: 15,
         }}
       >
@@ -37,7 +39,6 @@ export default function Index() {
         style={{
           width: "47.5%",
           aspectRatio: 1,
-          backgroundColor: "red",
           borderRadius: 15,
         }}
       >
@@ -53,5 +54,7 @@ export default function Index() {
         ></ImageBackground>
       </Pressable>
     </View>
+    </>
+ 
   );
 }
