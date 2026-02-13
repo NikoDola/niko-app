@@ -3,8 +3,11 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const STORAGE_KEY = "flipcoin:data";
 
 export type FlipCoinData = {
-  lastResult: "HEADS" | "TAILS";
+  heads: number;
+  tails: number;
+  lastResult: "HEADS" | "TAILS" | null;
   timestamp: number;
+  row: number;
 };
 
 export function useFlipStorage() {

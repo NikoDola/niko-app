@@ -3,6 +3,6 @@ export const MAX_FPS = 20;
 export const DURATION = 3000;
 export const STOP_INDEX = [3, 9];
 export const COIN_FACE = {
-  HEADS: 3,
-  TAILS: 9,
+  HEADS: 9,
+  TAILS: 3,
 } as const;
